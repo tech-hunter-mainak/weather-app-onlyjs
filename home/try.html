@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="text" type="text" onkeyup="changeIt();" placeholder="Enter Name..." value="">
+    <div id="textIt"></div>
+</body>
+<script>
+    function changeIt(){
+        document.getElementById("textIt").textContent =  document.getElementById("text").value;
+    }
+    document.onmousemove = changeIt()
+    function move(){
+        document.getElementById('textIt').textContent = window.clintX
+    }
+</script>
+</html>
